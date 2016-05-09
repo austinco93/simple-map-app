@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding= "utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shakabreaux.googlemapstest2.MapsActivity"
+    android:id="@+id/parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:id="@+id/textView2"
+            android:text="Choose Location:"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <Spinner
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:id="@+id/spinner" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:text="Search Location:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:id="@+id/button"
+            android:onClick="findLocation" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear all Markers"
+            android:id="@+id/button2"
+            android:onClick="clearMarkers" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:text="Draw Paths:"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawBtn"
+            android:textOff="Off"
+            android:textOn="On" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear All Paths"
+            android:id="@+id/button4"
+            android:onClick="clearPaths" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return to Main Menu"
+            android:id="@+id/retBtn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:text="@string/description"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Map App</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_intro">Map App</string>
+    <string name="description">Choose from menu or search a location.
+                                Click and hold map location to add a marker.
+                                To draw a path between markers, toggle on the draw path button then
+                                click the starting marker followed by any consecutive markers.</string>
+    <string name="title_activity_instructions">InstructionsActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+</resources>
