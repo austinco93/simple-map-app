@@ -7,6 +7,6 @@ This application allows the user to:
 * Search locations
 
 <p align="center">
-<img src="demo/maps1.gif" width="425"/> <img src="demo/maps2.gif" width="425"/> 
+<img src="demo/maps2.gif"/> 
 </p>
 
