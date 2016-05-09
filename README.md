@@ -6,5 +6,5 @@ This application allows the user to:
 * Map to preset locations
 * Search locations
 
-![](map1.gif) ![](map2.gif)
+![](demo/map1.gif) ![](demo/map2.gif)
 
